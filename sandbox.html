@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apollo Sandbox Testing</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/@apollo/sandbox@latest/dist/sandbox.js"></script>
+  <script>
+    const sandbox = new ApolloSandbox({
+      initialEndpoint: 'https://server-graphql-42305a.bridevstudio.bbri.io/proxy/4000/graphql', // Ganti dengan endpoint GraphQL Anda
+      root: document.getElementById('root')
+    });
+    sandbox.start();
+  </script>
+</body>
+</html>
